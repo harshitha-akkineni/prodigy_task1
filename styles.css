@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: #222;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333;
+    background-color: white;
+    border-radius: 5px;
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.content {
+    max-width: 600px;
+}
+
+#home {
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Gradient background */
+    color: white;
+}
+
+#services {
+    background-color: #e2e2e2;
+}
+
+#about {
+    background-color: #d1d1d1;
+}
+
+#contact {
+    background-color: #c0c0c0;
+}
+
+section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
